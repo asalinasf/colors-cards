@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #413755;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.container .card {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  box-sizing: border-box;
+  background-color: #544771;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 15px;
+  overflow: hidden;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.container .card .text {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  padding-top: 200px;
+  transition: 0.5s;
+}
+.container .card .text h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  opacity: 0;
+  transition: 0.6s;
+}
+.container .card .text p {
+  font-weight: 100;
+  line-height: 20px;
+  opacity: 0;
+  transition: 1s;
+}
+.container .card:hover .text {
+  transform: translateY(-50px);
+}
+.container .card:hover .text h2 {
+  opacity: 1;
+}
+.container .card:hover .text p {
+  opacity: 1;
+}
+.container .card:hover .iconBox {
+  margin-top: 50px;
+  transform: translateX(170%);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.container .card:hover .iconBox .icon {
+  font-size: 50px;
+}
+.container .card .iconBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #44b0ff;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+  display: flex;
+}
+.container .card .iconBox .icon {
+  color: #fff;
+  font-size: 70px;
+  transition: 0.2s;
+}
+
+.red {
+  background-color: #ff7693 !important;
+}
+
+.green {
+  background-color: #38dc91 !important;
+}
+
+.yellow {
+  background-color: #ffb100 !important;
+}
+
+.greenforest {
+  background-color: #2eaa82 !important;
+}
+
+.purple {
+  background-color: #d86cff !important;
+}/*# sourceMappingURL=styles.css.map */
